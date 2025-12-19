@@ -4,11 +4,11 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "npm: watch",
+      "label": "pnpm: watch",
       "type": "shell",
-      "command": "npm",
+      "command": "pnpm",
       "args": ["run", "watch"],
-      "problemMatcher": "$tsc-watch",
+      "problemMatcher": "$tsc",
       "isBackground": true,
       "presentation": {
         "reveal": "never"

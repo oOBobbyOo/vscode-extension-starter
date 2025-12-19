@@ -6,7 +6,7 @@
   "categories": [
     "Other"
   ],
-  "main": "./out/extension.js",
+  "main": "./out/extension.cjs",
   "engines": {
     "vscode": "^1.107.0"
   },
@@ -21,8 +21,8 @@
   },
   "scripts": {
     "vscode:prepublish": "pnpm run compile",
-    "compile": "tsc -p ./",
-    "watch": "tsc -watch -p ./",
+    "compile": "tsdown src/extension.ts -o out/extension.js",
+    "watch": "tsdown src/extension.ts -o out/extension.js --watch",
     "pretest": "pnpm run compile && pnpm run lint",
     "lint": "eslint .",
     "lint:fix": "eslint --fix",
@@ -35,6 +35,7 @@
     "@types/vscode": "^1.107.0",
     "@vitest/ui": "^2.0.0",
     "eslint": "^9.39.1",
+    "tsdown": "^0.18.1",
     "typescript": "^5.9.3",
     "vitest": "^2.0.0"
   }
