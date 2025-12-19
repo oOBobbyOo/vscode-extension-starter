@@ -1,8 +1,8 @@
-import { describe, it, expect } from 'vitest';
+import { describe, expect, it } from 'vitest'
 
-describe('Extension Test Suite', () => {
-	it('Sample test', () => {
-		expect([1, 2, 3].indexOf(5)).toBe(-1);
-		expect([1, 2, 3].indexOf(0)).toBe(-1);
-	});
-});
+describe('extension Test Suite', () => {
+  it('sample test', () => {
+    expect([1, 2, 3].indexOf(5)).toBe(-1)
+    expect([1, 2, 3].indexOf(0)).toBe(-1)
+  })
+})
