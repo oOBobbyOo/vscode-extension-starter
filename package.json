@@ -28,13 +28,18 @@
     "lint": "eslint .",
     "lint:fix": "eslint --fix",
     "test": "vitest",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "release": "bumpp",
+    "package": "vsce package --no-dependencies",
+    "publish": "vsce publish --no-dependencies"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.21.2",
     "@types/node": "^22.19.3",
     "@types/vscode": "^1.107.0",
     "@vitest/ui": "^2.0.0",
+    "@vscode/vsce": "^3.7.1",
+    "bumpp": "^10.3.2",
     "eslint": "^9.39.1",
     "reactive-vscode": "^0.4.1",
     "tsdown": "^0.18.1",
