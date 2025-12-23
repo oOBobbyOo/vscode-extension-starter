@@ -2,8 +2,13 @@
   "name": "vscode-extension-starter",
   "displayName": "vscode-extension-starter",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "vscode extension starter",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/oOBobbyOo/vscode-extension-starter.git"
+  },
   "categories": [
     "Other"
   ],
