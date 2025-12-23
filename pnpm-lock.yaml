@@ -26,6 +26,9 @@ importers:
       eslint:
         specifier: ^9.39.1
         version: 9.39.2
+      reactive-vscode:
+        specifier: ^0.4.1
+        version: 0.4.1(@types/vscode@1.107.0)
       tsdown:
         specifier: ^0.18.1
         version: 0.18.1(synckit@0.11.11)(typescript@5.9.3)
@@ -369,6 +372,9 @@ packages:
 
   '@quansync/fs@1.0.0':
     resolution: {integrity: sha512-4TJ3DFtlf1L5LDMaM6CanJ/0lckGNtJcMjQ1NAV6zDmA0tEHKZtxNKin8EgPaVX1YzljbxckyT2tJrpQKAtngQ==}
+
+  '@reactive-vscode/reactivity@0.4.1':
+    resolution: {integrity: sha512-ThNXTkTNK9LHvdlBcyzqSywlfF61FIQDlVDqv12+rkRQCCUjWsD+oilbIYYi5uAJkQ2h/yLyowx3f0YVEY1bxQ==}
 
   '@rolldown/binding-android-arm64@1.0.0-beta.55':
     resolution: {integrity: sha512-5cPpHdO+zp+klznZnIHRO1bMHDq5hS9cqXodEKAaa/dQTPDjnE91OwAsy3o1gT2x4QaY8NzdBXAvutYdaw0WeA==}
@@ -1648,6 +1654,11 @@ packages:
   quansync@1.0.0:
     resolution: {integrity: sha512-5xZacEEufv3HSTPQuchrvV6soaiACMFnq1H8wkVioctoH3TRha9Sz66lOxRwPK/qZj7HPiSveih9yAyh98gvqA==}
 
+  reactive-vscode@0.4.1:
+    resolution: {integrity: sha512-meh1p9cF3A0kRKQARo84PASHwa27cFMD3bLWfV7DypERf51678f420my8btKAyMHl3P6pI7LcivrrwbfrIgmNg==}
+    peerDependencies:
+      '@types/vscode': ^1.101.0
+
   read-pkg-up@7.0.1:
     resolution: {integrity: sha512-zK0TB7Xd6JpCLmlLmufqykGE+/TlOePD6qKClNW7hHDKFh/J7/7gCWGR7joEQEW1bKq3a3yUZSObOoWLFQ4ohg==}
     engines: {node: '>=8'}
@@ -2355,6 +2366,8 @@ snapshots:
   '@quansync/fs@1.0.0':
     dependencies:
       quansync: 1.0.0
+
+  '@reactive-vscode/reactivity@0.4.1': {}
 
   '@rolldown/binding-android-arm64@1.0.0-beta.55':
     optional: true
@@ -3587,6 +3600,11 @@ snapshots:
   quansync@0.2.11: {}
 
   quansync@1.0.0: {}
+
+  reactive-vscode@0.4.1(@types/vscode@1.107.0):
+    dependencies:
+      '@reactive-vscode/reactivity': 0.4.1
+      '@types/vscode': 1.107.0
 
   read-pkg-up@7.0.1:
     dependencies:

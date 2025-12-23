@@ -1,6 +1,7 @@
 {
   "name": "vscode-extension-starter",
   "displayName": "vscode-extension-starter",
+  "type": "module",
   "version": "0.0.1",
   "description": "vscode extension starter",
   "categories": [
@@ -35,6 +36,7 @@
     "@types/vscode": "^1.107.0",
     "@vitest/ui": "^2.0.0",
     "eslint": "^9.39.1",
+    "reactive-vscode": "^0.4.1",
     "tsdown": "^0.18.1",
     "typescript": "^5.9.3",
     "vitest": "^2.0.0"
