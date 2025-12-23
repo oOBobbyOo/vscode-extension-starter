@@ -11,11 +11,8 @@ importers:
       '@antfu/eslint-config':
         specifier: ^2.21.2
         version: 2.27.3(@typescript-eslint/utils@8.50.0(eslint@9.39.2)(typescript@5.9.3))(@vue/compiler-sfc@3.5.26)(eslint@9.39.2)(typescript@5.9.3)(vitest@2.1.9)
-      '@types/mocha':
-        specifier: ^10.0.10
-        version: 10.0.10
       '@types/node':
-        specifier: 22.x
+        specifier: ^22.19.3
         version: 22.19.3
       '@types/vscode':
         specifier: ^1.107.0
@@ -586,9 +583,6 @@ packages:
 
   '@types/mdast@3.0.15':
     resolution: {integrity: sha512-LnwD+mUEfxWMa1QpDraczIn6k0Ee3SMicuYSSzS6ZYl2gKS09EClnJYGd8Du6rfc5r/GZEk5o1mRb8TaTj03sQ==}
-
-  '@types/mocha@10.0.10':
-    resolution: {integrity: sha512-xPyYSz1cMPnJQhl0CLMH68j3gprKZaTjG3s5Vi+fDgx+uhG9NOXwbVt52eFS8ECyXhyKcjDLCBEqBExKuiZb7Q==}
 
   '@types/node@22.19.3':
     resolution: {integrity: sha512-1N9SBnWYOJTrNZCdh/yJE+t910Y128BoyY+zBLWhL3r0TYzlTmFdXrPwHL9DyFZmlEXNQQolTZh3KHV31QDhyA==}
@@ -2507,8 +2501,6 @@ snapshots:
   '@types/mdast@3.0.15':
     dependencies:
       '@types/unist': 2.0.11
-
-  '@types/mocha@10.0.10': {}
 
   '@types/node@22.19.3':
     dependencies:

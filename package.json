@@ -22,17 +22,17 @@
   },
   "scripts": {
     "vscode:prepublish": "pnpm run compile",
-    "compile": "tsdown src/extension.ts -o out/extension.js",
-    "watch": "tsdown src/extension.ts -o out/extension.js --watch",
+    "compile": "tsdown",
+    "watch": "tsdown --watch",
     "pretest": "pnpm run compile && pnpm run lint",
     "lint": "eslint .",
     "lint:fix": "eslint --fix",
-    "test": "vitest"
+    "test": "vitest",
+    "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.21.2",
-    "@types/mocha": "^10.0.10",
-    "@types/node": "22.x",
+    "@types/node": "^22.19.3",
     "@types/vscode": "^1.107.0",
     "@vitest/ui": "^2.0.0",
     "eslint": "^9.39.1",
